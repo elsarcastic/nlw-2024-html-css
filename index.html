@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/pt-br.js"></script>
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+    <script>
+      dayjs.extend(window.dayjs_plugin_relativeTime).locale('pt-br')
+    </script>
+    <title>pass.in</title>
+    <script type="text/javascript" src="./script.js" defer=""></script>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+
+  <body>
+    <main>
+      <header>
+        <img src="./assets/img/logo.svg" alt="Icone PassIn">
+      </header>
+      <div class="line"></div>
+      <section>
+        <h3>Inscrição</h3>
+        <form onsubmit=adicionarParticipante(event)>
+          <div class="input-wrapper">
+            <img src="./assets/img/user.svg" alt="Nome Completo">
+            <input name="nome" type="text" placeholder="Nome completo" required>
+          </div>
+          <div class="input-wrapper">
+            <img src="./assets/img/email.svg" alt="Email">
+            <input name="email" type="email" placeholder="E-mail" required>
+          </div>
+          <button type="submit">realizar inscrição</button>
+        </form>
+      </section>
+      <div class="line"></div>
+      <section>
+        <h3>Participantes</h3>
+        <div>
+        <table>
+          <thead>
+            <tr>
+              <th>Participante</th>
+              <th>Data da inscrição</th>
+              <th>Data do check-in</th>
+            </tr>
+          </thead>
+          <tbody>
+          </tbody>
+        </table>
+      </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+
+</html>

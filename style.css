@@ -1,0 +1,159 @@
+* {
+  margin:  0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121214;
+  color: #FFFFFF;
+  font-size: 1.6rem;
+  margin: 0 3.2rem;
+  font-family: 'Roboto';
+  display: flex;
+  justify-content: center;
+}
+
+:root {
+  font-size: 62.5%; /* 10 px */
+  --border: rgb(255, 255, 255, 0.2);
+}
+
+header, section {
+  margin: 2rem 0;
+}
+
+.line {
+  background-color: var(--border);
+  height: 1px;
+}
+
+h3 {
+  color: #E1E1E6;
+  margin-bottom: 1.6rem;
+  line-height: 2.24rem;
+}
+
+form {
+  display: flex;
+  gap: 12px;
+}
+
+.input-wrapper {
+  height: 3.7rem;
+  width: 22rem;
+  border-radius: 1rem;
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  padding: 1.05rem 1.2rem;
+  gap: 1.2rem;
+}
+
+input {
+  all: unset;
+}
+
+input, input::placeholder {
+  font-family: 'Roboto', sans-serif;
+  color: #C4C4CC;
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+}
+
+input, input::placeholder ,button {
+  font-family: 'Roboto', sans-serif;
+ }
+
+button {
+  background-color: #F48F56;
+  border: none;
+  border-radius: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  line-height: 2.4rem;
+  color: #00292E;
+  padding: 0.7rem 2rem;
+  width: 16.2rem;
+}
+
+button:hover {
+  background-color: #d76625;
+  cursor: pointer;
+}
+
+section:nth-child(odd) > div {
+  border: 1px solid var(--border);
+  border-radius: 0.8rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table > thead {
+  height: 4rem;
+  text-align: left;
+  font-size: 1.4rem;
+
+}
+
+tbody > tr {
+  height: 6rem;
+  color: #C4C4CC;
+  font-size: 1.3rem;
+}
+
+strong {
+  color: #FFFFFF;
+  font-size: 1.4rem;
+}
+
+small {
+  font-size: 1.2rem;
+}
+
+tbody > tr:hover {
+  background-color: #313030;
+}
+
+th, td {
+  padding: 1.2rem 1.6rem;
+}
+
+td {
+  border-top: 1px solid var(--border);
+}
+
+td > button {
+  all: unset;
+  color: #9FF9CC;
+}
+
+td > button:hover {
+  all: unset;
+  cursor: pointer;
+  color: #28a868;
+}
+
+@media(max-width: 720px) {
+
+  form {
+    display: grid;
+  }
+
+  td > button {
+    max-width: 6.5rem;
+  }
+
+  tr > th:nth-child(3) {
+    min-width: 9rem;
+  }
+
+  .input-wrapper, form > button {
+    width: 100%
+  }
+
+}
